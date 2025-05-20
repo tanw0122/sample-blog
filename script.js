@@ -1,4 +1,4 @@
-// Car Aid JavaScript
+// ReCarvery JavaScript
 
 document.addEventListener('DOMContentLoaded', function() {
   // Mobile menu toggle
