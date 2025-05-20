@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Find Workshops - Car-verYourBack</title>
+    <meta name="description" content="Find suitable mechanics based on location, ratings, and specializations with Car-verYourBack's workshop finder." />
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  
+  <body>
+    <header>
+      <div class="container">
+        <div class="header-content">
+          <a href="/" class="logo">Car-verYourBack</a>
+          <button class="mobile-menu-toggle" aria-label="Toggle navigation menu">☰</button>
+          <nav>
+            <ul>
+              <li><a href="/index.html">Home</a></li>
+              <li><a href="/workshops.html">Find Workshop</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+    
+    <div class="page-header">
+      <div class="container">
+        <h1>Find Workshops</h1>
+      </div>
+    </div>
+    
+    <main>
+      <section class="section">
+        <div class="container">
+          <div class="workshops-container">
+            <!-- Filter Panel -->
+            <div class="filter-panel">
+              <h2 class="filter-title">Filter Workshops</h2>
+              
+              <!-- Region Filter -->
+              <div class="filter-group">
+                <label class="filter-label" for="region">Region</label>
+                <select id="region">
+                  <option value="all">All Regions</option>
+                  <option value="north">North</option>
+                  <option value="south">South</option>
+                  <option value="east">East</option>
+                  <option value="west">West</option>
+                  <option value="central">Central</option>
+                  <option value="north-east">North-East</option>
+                  <option value="north-west">North-West</option>
+                  <option value="south-east">South-East</option>
+                  <option value="south-west">South-West</option>
+                </select>
+              </div>
+              
+              <!-- Rating Filter -->
+              <div class="filter-group">
+                <label class="filter-label" for="rating">Minimum Rating</label>
+                <input type="range" id="rating" min="0" max="5" step="1" value="0">
+                <div class="rating-display">
+                  <span>Any</span>
+                  <span>5★</span>
+                </div>
+              </div>
+              
+              <!-- Specialization Filter -->
+              <div class="filter-group">
+                <label class="filter-label" for="specialization">Specialization</label>
+                <select id="specialization">
+                  <option value="all">All Specializations</option>
+                  <option value="engine-repair">Engine Repair</option>
+                  <option value="brake-service">Brake Service</option>
+                  <option value="electrical">Electrical Systems</option>
+                  <option value="transmission">Transmission</option>
+                  <option value="tire-service">Tire Service</option>
+                  <option value="battery">Battery Service</option>
+                </select>
+              </div>
+              
+              <!-- Price Display Filter -->
+              <div class="filter-group">
+                <label class="checkbox-label">
+                  <input type="checkbox" id="price-displayed">
+                  <span>Show only workshops with listed prices</span>
+                </label>
+              </div>
+              
+              <!-- Reset Filters -->
+              <button class="reset-button">Reset Filters</button>
+            </div>
+            
+            <!-- Workshop List -->
+            <div class="workshop-list">
+              <!-- Workshop 1 -->
+              <div class="workshop-card">
+                <div class="workshop-image">
+                  <img src="https://images.unsplash.com/photo-1517524008697-84bbe3c3fd98?auto=format&fit=crop&q=80&w=1000" alt="Speedfix Auto">
+                </div>
+                <div class="workshop-content">
+                  <h3 class="workshop-name">Speedfix Auto</h3>
+                  <p class="workshop-address">123 Main Street • North</p>
+                  
+                  <!-- Rating -->
+                  <div class="workshop-rating">
+                    <div class="workshop-stars">★★★★☆</div>
+                    <span class="workshop-reviews">4.0 (42 reviews)</span>
+                  </div>
+                  
+                  <!-- Specializations -->
+                  <div class="workshop-tags">
+                    <span class="workshop-tag">Engine Repair</span>
+                    <span class="workshop-tag">Electrical</span>
+                    <span class="workshop-tag">Diagnostics</span>
+                    <span class="workshop-more-tag">+2 more</span>
+                  </div>
+                  
+                  <!-- Price -->
+                  <div class="workshop-price">
+                    <span>Price:</span> <span class="workshop-price-value">$$ - $$$</span>
+                  </div>
+                  
+                  <!-- View Details Button -->
+                  <a href="/workshop-details.html?id=1" class="view-details-button">View Details</a>
+                </div>
+              </div>
+              
+              <!-- Workshop 2 -->
+              <div class="workshop-card">
+                <div class="workshop-image">
+                  <img src="https://images.unsplash.com/photo-1606957693531-3ce8aa307dcf?auto=format&fit=crop&q=80&w=1000" alt="AutoCare Plus">
+                </div>
+                <div class="workshop-content">
+                  <h3 class="workshop-name">AutoCare Plus</h3>
+                  <p class="workshop-address">456 Oak Avenue • Central</p>
+                  
+                  <!-- Rating -->
+                  <div class="workshop-rating">
+                    <div class="workshop-stars">★★★★★</div>
+                    <span class="workshop-reviews">4.8 (126 reviews)</span>
+                  </div>
+                  
+                  <!-- Specializations -->
+                  <div class="workshop-tags">
+                    <span class="workshop-tag">Brake Service</span>
+                    <span class="workshop-tag">Tire Service</span>
+                    <span class="workshop-tag">Battery</span>
+                    <span class="workshop-more-tag">+3 more</span>
+                  </div>
+                  
+                  <!-- Price -->
+                  <div class="workshop-price">
+                    <span>Price:</span> <span class="workshop-price-value">$$ - $$$</span>
+                  </div>
+                  
+                  <!-- View Details Button -->
+                  <a href="/workshop-details.html?id=2" class="view-details-button">View Details</a>
+                </div>
+              </div>
+              
+              <!-- Workshop 3 -->
+              <div class="workshop-card">
+                <div class="workshop-image">
+                  <img src="https://images.unsplash.com/photo-1624626296606-981e8c3370a1?auto=format&fit=crop&q=80&w=1000" alt="Precision Motors">
+                </div>
+                <div class="workshop-content">
+                  <h3 class="workshop-name">Precision Motors</h3>
+                  <p class="workshop-address">789 Pine Road • East</p>
+                  
+                  <!-- Rating -->
+                  <div class="workshop-rating">
+                    <div class="workshop-stars">★★★★★</div>
+                    <span class="workshop-reviews">4.9 (87 reviews)</span>
+                  </div>
+                  
+                  <!-- Specializations -->
+                  <div class="workshop-tags">
+                    <span class="workshop-tag">Transmission</span>
+                    <span class="workshop-tag">Engine Repair</span>
+                    <span class="workshop-tag">Electrical</span>
+                    <span class="workshop-more-tag">+1 more</span>
+                  </div>
+                  
+                  <!-- Price -->
+                  <div class="workshop-price">
+                    <span>Price:</span> <span class="workshop-price-value">$$$ - $$$$</span>
+                  </div>
+                  
+                  <!-- View Details Button -->
+                  <a href="/workshop-details.html?id=3" class="view-details-button">View Details</a>
+                </div>
+              </div>
+              
+              <!-- Workshop 4 -->
+              <div class="workshop-card">
+                <div class="workshop-image">
+                  <img src="https://images.unsplash.com/photo-1568605117036-5fe5e7bab0b7?auto=format&fit=crop&q=80&w=1000" alt="Quick Fix Garage">
+                </div>
+                <div class="workshop-content">
+                  <h3 class="workshop-name">Quick Fix Garage</h3>
+                  <p class="workshop-address">101 Maple Street • South</p>
+                  
+                  <!-- Rating -->
+                  <div class="workshop-rating">
+                    <div class="workshop-stars">★★★☆☆</div>
+                    <span class="workshop-reviews">3.5 (28 reviews)</span>
+                  </div>
+                  
+                  <!-- Specializations -->
+                  <div class="workshop-tags">
+                    <span class="workshop-tag">Tire Service</span>
+                    <span class="workshop-tag">Battery</span>
+                    <span class="workshop-tag">Oil Change</span>
+                  </div>
+                  
+                  <!-- Price -->
+                  <div class="workshop-price">
+                    <span>Price:</span> <span class="workshop-price-value">$ - $$</span>
+                  </div>
+                  
+                  <!-- View Details Button -->
+                  <a href="/workshop-details.html?id=4" class="view-details-button">View Details</a>
+                </div>
+              </div>
+              
+              <!-- Workshop 5 -->
+              <div class="workshop-card">
+                <div class="workshop-image">
+                  <img src="https://images.unsplash.com/photo-1570051008600-1fae93834a70?auto=format&fit=crop&q=80&w=1000" alt="Elite Auto Service">
+                </div>
+                <div class="workshop-content">
+                  <h3 class="workshop-name">Elite Auto Service</h3>
+                  <p class="workshop-address">202 Cedar Blvd • West</p>
+                  
+                  <!-- Rating -->
+                  <div class="workshop-rating">
+                    <div class="workshop-stars">★★★★☆</div>
+                    <span class="workshop-reviews">4.2 (53 reviews)</span>
+                  </div>
+                  
+                  <!-- Specializations -->
+                  <div class="workshop-tags">
+                    <span class="workshop-tag">Luxury Cars</span>
+                    <span class="workshop-tag">Performance</span>
+                    <span class="workshop-tag">Diagnostics</span>
+                    <span class="workshop-more-tag">+4 more</span>
+                  </div>
+                  
+                  <!-- Price -->
+                  <div class="workshop-price">
+                    <span>Price:</span> <span class="workshop-price-value">$$$ - $$$$</span>
+                  </div>
+                  
+                  <!-- View Details Button -->
+                  <a href="/workshop-details.html?id=5" class="view-details-button">View Details</a>
+                </div>
+              </div>
+              
+              <!-- Workshop 6 -->
+              <div class="workshop-card">
+                <div class="workshop-image">
+                  <img src="https://images.unsplash.com/photo-1449965408869-eaa3f722e40d?auto=format&fit=crop&q=80&w=1000" alt="Budget Auto Repairs">
+                </div>
+                <div class="workshop-content">
+                  <h3 class="workshop-name">Budget Auto Repairs</h3>
+                  <p class="workshop-address">303 Elm Street • North-East</p>
+                  
+                  <!-- Rating -->
+                  <div class="workshop-rating">
+                    <div class="workshop-stars">★★★★☆</div>
+                    <span class="workshop-reviews">3.7 (31 reviews)</span>
+                  </div>
+                  
+                  <!-- Specializations -->
+                  <div class="workshop-tags">
+                    <span class="workshop-tag">General Repair</span>
+                    <span class="workshop-tag">Brake Service</span>
+                    <span class="workshop-tag">Oil Change</span>
+                  </div>
+                  
+                  <!-- Price -->
+                  <div class="workshop-price">
+                    <span>Price:</span> <span class="workshop-price-value">$ - $$</span>
+                  </div>
+                  
+                  <!-- View Details Button -->
+                  <a href="/workshop-details.html?id=6" class="view-details-button">View Details</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    
+    <footer>
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-branding">
+            <h2>Car-verYourBack</h2>
+            <p>Helping drivers diagnose issues and find the right help, fast.</p>
+          </div>
+          <div class="footer-links">
+            <div>
+              <h3>Quick Links</h3>
+              <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/diagnosis.html">Diagnose Issue</a></li>
+                <li><a href="/workshops.html">Find Workshop</a></li>
+              </ul>
+            </div>
+            <div>
+              <h3>Contact</h3>
+              <ul>
+                <li>support@carveryourback.com</li>
+                <li>123-456-7890</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          &copy; <script>document.write(new Date().getFullYear())</script> Car-verYourBack. All rights reserved.
+        </div>
+      </div>
+    </footer>
+    
+    <!-- IMPORTANT: DO NOT REMOVE THIS SCRIPT TAG OR THIS VERY COMMENT! -->
+    <script src="https://cdn.gpteng.co/gptengineer.js" type="module"></script>
+    <script src="scripts.js"></script>
+  </body>
+</html>

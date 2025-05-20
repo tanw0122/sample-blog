@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Diagnose Your Car Issue - Car-verYourBack</title>
+    <meta name="description" content="Use Car-verYourBack's diagnosis tool to identify your car problem through visual guides and descriptions." />
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  
+  <body>
+    <header>
+      <div class="container">
+        <div class="header-content">
+          <a href="/" class="logo">Car-verYourBack</a>
+          <button class="mobile-menu-toggle" aria-label="Toggle navigation menu">☰</button>
+          <nav>
+            <ul>
+              <li><a href="/index.html">Home</a></li>
+              <li><a href="/workshops.html">Find Workshop</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+    
+    <div class="page-header">
+      <div class="container">
+        <h1>Diagnose Your Car Issue</h1>
+      </div>
+    </div>
+    
+    <main>
+      <section class="section">
+        <div class="container">
+          <p>Browse through common car issues below. Select the one that matches your symptoms to find workshops that can help.</p>
+          
+          <!-- Add search functionality -->
+          <div style="max-width: 600px; margin: 2rem auto;">
+            <label for="issue-search" style="display: block; margin-bottom: 0.5rem; font-weight: 500;">Search car issues or symptoms:</label>
+            <input type="text" id="issue-search" placeholder="E.g., brake, engine, tire, noise..." style="width: 100%; padding: 0.75rem; border: 1px solid #ddd; border-radius: 0.25rem; font-size: 1rem;">
+          </div>
+          
+          <div class="card-grid">
+            <!-- Car Issue 1 -->
+            <div class="card">
+              <div class="card-image">
+                <img src="https://images.unsplash.com/photo-1517524008697-84bbe3c3fd98?auto=format&fit=crop&q=80&w=1000" alt="Engine Won't Start">
+              </div>
+              <div class="card-content">
+                <h3 class="card-title">Engine Won't Start</h3>
+                <p class="card-text">Common symptoms:</p>
+                <ul class="symptom-list">
+                  <li>Clicking sound when turning key</li>
+                  <li>Engine cranks but doesn't start</li>
+                  <li>No sound when trying to start</li>
+                </ul>
+                <a href="/workshops.html?issue=engine-wont-start" class="card-button">Find Workshops For This Issue</a>
+              </div>
+            </div>
+            
+            <!-- Car Issue 2 -->
+            <div class="card">
+              <div class="card-image">
+                <img src="https://images.unsplash.com/photo-1575377428836-fce3cf8f9b7a?auto=format&fit=crop&q=80&w=1000" alt="Brake Problems">
+              </div>
+              <div class="card-content">
+                <h3 class="card-title">Brake Problems</h3>
+                <p class="card-text">Common symptoms:</p>
+                <ul class="symptom-list">
+                  <li>Squealing or grinding noise</li>
+                  <li>Soft or spongy brake pedal</li>
+                  <li>Car pulls to one side when braking</li>
+                </ul>
+                <a href="/workshops.html?issue=brake-problems" class="card-button">Find Workshops For This Issue</a>
+              </div>
+            </div>
+            
+            <!-- Car Issue 3 -->
+            <div class="card">
+              <div class="card-image">
+                <img src="https://images.unsplash.com/photo-1601179058841-43be883e45f9?auto=format&fit=crop&q=80&w=1000" alt="Overheating Engine">
+              </div>
+              <div class="card-content">
+                <h3 class="card-title">Overheating Engine</h3>
+                <p class="card-text">Common symptoms:</p>
+                <ul class="symptom-list">
+                  <li>Temperature gauge in red zone</li>
+                  <li>Steam from under hood</li>
+                  <li>Sweet smell from engine area</li>
+                </ul>
+                <a href="/workshops.html?issue=overheating-engine" class="card-button">Find Workshops For This Issue</a>
+              </div>
+            </div>
+            
+            <!-- Car Issue 4 -->
+            <div class="card">
+              <div class="card-image">
+                <img src="https://images.unsplash.com/photo-1599256871679-6a640a6a6b99?auto=format&fit=crop&q=80&w=1000" alt="Battery Issues">
+              </div>
+              <div class="card-content">
+                <h3 class="card-title">Battery Issues</h3>
+                <p class="card-text">Common symptoms:</p>
+                <ul class="symptom-list">
+                  <li>Dim headlights</li>
+                  <li>Electrical components not working</li>
+                  <li>Difficulty starting the car</li>
+                </ul>
+                <a href="/workshops.html?issue=battery-issues" class="card-button">Find Workshops For This Issue</a>
+              </div>
+            </div>
+            
+            <!-- Car Issue 5 -->
+            <div class="card">
+              <div class="card-image">
+                <img src="https://images.unsplash.com/photo-1639729944567-276d7726a5b7?auto=format&fit=crop&q=80&w=1000" alt="Flat Tire">
+              </div>
+              <div class="card-content">
+                <h3 class="card-title">Flat Tire</h3>
+                <p class="card-text">Common symptoms:</p>
+                <ul class="symptom-list">
+                  <li>Thumping noise while driving</li>
+                  <li>Vehicle pulling to one side</li>
+                  <li>Visible tire damage</li>
+                </ul>
+                <a href="/workshops.html?issue=flat-tire" class="card-button">Find Workshops For This Issue</a>
+              </div>
+            </div>
+            
+            <!-- Car Issue 6 -->
+            <div class="card">
+              <div class="card-image">
+                <img src="https://images.unsplash.com/photo-1619468129361-605ebea04b44?auto=format&fit=crop&q=80&w=1000" alt="Transmission Problems">
+              </div>
+              <div class="card-content">
+                <h3 class="card-title">Transmission Problems</h3>
+                <p class="card-text">Common symptoms:</p>
+                <ul class="symptom-list">
+                  <li>Grinding or shaking when changing gears</li>
+                  <li>Burning smell</li>
+                  <li>Delayed or no response when shifting</li>
+                </ul>
+                <a href="/workshops.html?issue=transmission-problems" class="card-button">Find Workshops For This Issue</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    
+    <footer>
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-branding">
+            <h2>Car-verYourBack</h2>
+            <p>Helping drivers diagnose issues and find the right help, fast.</p>
+          </div>
+          <div class="footer-links">
+            <div>
+              <h3>Quick Links</h3>
+              <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/diagnosis.html">Diagnose Issue</a></li>
+                <li><a href="/workshops.html">Find Workshop</a></li>
+              </ul>
+            </div>
+            <div>
+              <h3>Contact</h3>
+              <ul>
+                <li>support@carveryourback.com</li>
+                <li>123-456-7890</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          &copy; <script>document.write(new Date().getFullYear())</script> Car-verYourBack. All rights reserved.
+        </div>
+      </div>
+    </footer>
+    
+    <!-- IMPORTANT: DO NOT REMOVE THIS SCRIPT TAG OR THIS VERY COMMENT! -->
+    <script src="https://cdn.gpteng.co/gptengineer.js" type="module"></script>
+    <script src="scripts.js"></script>
+  </body>
+</html>
