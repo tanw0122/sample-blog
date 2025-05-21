@@ -180,8 +180,8 @@ function applyUrlFilters() {
       'engine-wont-start': 'engine-repair',
       'brake-problems': 'brake-service',
       'overheating-engine': 'engine-repair',
-      'battery-issues': 'battery',
-      'flat-tire': 'tire-service',
+      'battery-issues': 'battery-service',
+      'flat-tire': 'tyre-service',
       'transmission-problems': 'transmission'
     };
     
