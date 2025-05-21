@@ -1,4 +1,4 @@
-// ReCarvery JavaScript
+// ReCARvery JavaScript
 
 document.addEventListener('DOMContentLoaded', function() {
   // Mobile menu toggle
