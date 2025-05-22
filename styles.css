@@ -445,7 +445,7 @@ nav ul li a:hover {
 
 select, input[type="range"] {
   width: 100%;
-  padding: 0.5rem;
+  padding: 0rem;
   border: 1px solid #ddd;
   border-radius: 0.25rem;
   margin-bottom: 0.75rem;

@@ -177,15 +177,16 @@ function applyUrlFilters() {
     
     // Map issue to specialization
     const issueToSpecMapping = {
-      'engine-wont-start': 'engine-repair',
-      'brake-problems': 'brake-service',
+      'engine-wont-start': 'Engine Service',
+      'brake-problems': 'Brake Service',
       'overheating-engine': 'engine-repair',
       'battery-issues': 'battery-service',
       'flat-tire': 'tyre-service',
       'transmission-problems': 'transmission'
     };
     
-    const specialization = issueToSpecMapping[issue] || 'all';
+   // const specialization = issueToSpecMapping[issue] || 'all';
+    const specialization = issue || 'all';
     
     if (specializationSelect && specialization !== 'all') {
       specializationSelect.value = specialization;
